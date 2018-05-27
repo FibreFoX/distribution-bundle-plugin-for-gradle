@@ -58,6 +58,10 @@ matrix:
       osx_image: xcode9.2
       env: FAILURES_ALLOWED=false
 
+# http://stackoverflow.com/questions/35128777/travis-ci-build-failed#comment58070003_35153221
+before_install:
+  - chmod +x gradlew
+
 script:
   - ./gradlew clean install
   - ./gradlew check

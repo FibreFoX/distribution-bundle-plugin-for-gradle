@@ -30,3 +30,31 @@ ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+
+dependencies {
+    compile gradleApi()
+    testCompile gradleTestKit()
+    testCompile group: 'org.testng', name: 'testng', version: '6.10'
+}
+
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives jar
+    archives javadocJar
+    archives sourcesJar
+}
+
+test {
+    useTestNG()
+    testLogging.showStandardStreams = true
+}

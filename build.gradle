@@ -15,6 +15,12 @@
  */
 
 apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 
 group = 'de.dynamicfiles.projects.gradle.plugins'
 archivesBaseName = 'distribution-bundle-gradle-plugin'

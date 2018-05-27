@@ -1,4 +1,5 @@
 [![Travis Build Status](https://travis-ci.org/FibreFoX/distribution-bundle-plugin-for-gradle.svg?branch=master)](https://travis-ci.org/FibreFoX/distribution-bundle-plugin-for-gradle)
+[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/hc9rt5krc7t12vb9/branch/master?svg=true)](https://ci.appveyor.com/project/FibreFoX/distribution-bundle-plugin-for-gradle/branch/master)
 
 # WORK IN PROGRESS
 
